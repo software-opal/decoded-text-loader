@@ -6,7 +6,7 @@
   "scripts": {
     "release": "standard-version --sign",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": {
     "name": "Lee Symes",
@@ -14,10 +14,16 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-jest": "^22.0.4",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "standard-version": "^4.3.0"
+    "jest": "^22.0.4",
+    "memory-fs": "^0.4.1",
+    "raw-loader": "^0.5.1",
+    "standard-version": "^4.3.0",
+    "webpack": "^3.10.0"
   },
   "dependencies": {
     "jschardet": "^1.6.0",

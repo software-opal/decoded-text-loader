@@ -20,18 +20,18 @@ module.exports = {
       {
         test: /_large\.txt$/,
         use: [
-          { loader: 'decoded-text-loader' },
           {
             loader: 'file-loader',
             options: {},
           },
+          { loader: 'decoded-text-loader' },
         ],
       },
       {
         test: /\.txt$/,
         use: [
-          { loader: 'decoded-text-loader' },
           { loader: 'raw-loader' },
+          { loader: 'decoded-text-loader' },
         ],
       },
     ],
@@ -44,6 +44,8 @@ This will automatically convert any `*_large.txt` to use the
  loaded dynamically. All other `*.txt` files will be loaded using
  [`raw-loader`](https://webpack.js.org/loaders/raw-loader/) so they can be 
  accessed directly.
+
+**Caution:** webpack loaders are executed in the [reverse order](https://webpack.js.org/api/loaders/#pitching-loader) to their declaration so whilst the order here looks weird, it is correct.
 
 ## Notes
 
