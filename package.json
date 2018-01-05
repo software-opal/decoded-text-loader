@@ -4,6 +4,7 @@
   "description": "A Webpack loader to convert files on disk(in any encoding) into a JavaScript UTF-8 string",
   "main": "src/index.js",
   "scripts": {
+    "release": "standard-version",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,12 +16,11 @@
   "devDependencies": {
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "standard-version": "^4.3.0"
   },
   "dependencies": {
     "jschardet": "^1.6.0",
-    "loader-utils": "^1.1.0",
-    "schema-utils": "^0.4.3",
     "text-encoding": "^0.6.4"
   },
   "repository": {
