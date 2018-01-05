@@ -1,0 +1,30 @@
+{
+  "name": "decoded-text-loader",
+  "version": "0.0.1",
+  "description": "A Webpack loader to convert files on disk(in any encoding) into a JavaScript UTF-8 string",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Lee Symes",
+    "email": "leesdolphin@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "jschardet": "^1.6.0",
+    "loader-utils": "^1.1.0",
+    "schema-utils": "^0.4.3",
+    "text-encoding": "^0.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leesdolphin/decoded-text-loader.git"
+  }
+}
